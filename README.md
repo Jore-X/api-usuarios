@@ -71,6 +71,42 @@ Por padrão, a API ficará disponível em:
 | PUT | `/usuarios/:id` | Atualizar usuário |
 | DELETE | `/usuarios/:id` | Excluir usuário |
 
+## Dados de demonstração
+
+A API já possui alguns usuários cadastrados para facilitar os testes.
+
+**Endpoint:** `GET /usuarios`
+
+Exemplo de resposta:
+
+```json
+[
+  {
+    "id": 2,
+    "name": "Maria Josephina",
+    "created_at": "2026-10-29T04:56:21.810458+00:00"
+  },
+  {
+    "id": 1,
+    "name": "Carl Jhonson",
+    "created_at": "2026-10-29T04:52:54.834753+00:00"
+  },
+  {
+    "id": 6,
+    "name": "Manoel",
+    "created_at": "2026-10-29T18:16:20.57998+00:00"
+  },
+  {
+    "id": 4,
+    "name": "Joaquim Soares",
+    "created_at": "2026-10-29T15:40:27.079904+00:00"
+  }
+]
+```
+
+Esses registros são apenas exemplos para visualizar o funcionamento da API. Os dados podem mudar conforme novos testes forem realizados.
+
+
 ### Exemplos de requisições
 
 **Cadastrar usuário — `POST /usuarios`**
