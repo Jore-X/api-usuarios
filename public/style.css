@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-background: #111827;
+  --main-text: #e4e4e7;
+  --secondary-text: #9aa0a6;
+  --emphasis-blue: #090d16;
+  --borders: rgba(250, 250, 250, 0.1);
+
+  /* Method colors */
+  --get-background: #dcfce7;
+  --get-text: #166534;
+
+  --post-background: #dbeafe;
+  --post-text: #1d4ed8;
+
+  --put-background: #fef3c7;
+  --put-text: #92400e;
+
+  --delete-background: #fee2e2;
+  --delete-text: #991b1b;
+}
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  background: var(--main-background);
+  color: var(--main-text);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 44px 12px;
+
+  border: 1px solid var(--borders);
+}
+
+.header-div {
+  background: var(--emphasis-blue);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.header-div .title {
+  font-size: 1.7rem;
+}
+.header-div .technologies {
+  color: var(--secondary-text);
+}
+.header-div .subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.text-logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 4px;
+}
+
+.footer-endpoints > img,
+.text-logo img {
+  width: 4%;
+  max-width: 30px;
+  min-width: 18px;
+}
+
+.footer-endpoints {
+  display: flex;
+  padding: 12px;
+  gap: 16px;
+  border-top: 1px solid var(--borders);
+}
+.footer-endpoints > .info > p {
+  color: var(--secondary-text);
+}
+
+.time-alert {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  background: #000;
+  border-bottom: 1px solid var(--borders);
+}
+.time-alert > span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+.time-alert > span > img {
+  width: 3.5%;
+  max-width: 30px;
+  min-width: 18px;
+}
+
+.time-alert > p {
+  color: var(--secondary-text);
+  padding: 8px;
+  letter-spacing: 1px;
+}
+
+.endpoints-box {
+  padding: 16px;
+  background: #000;
+}
+.endpoints-box > .title {
+  padding-bottom: 12px;
+}
+.card-endpoint {
+  display: flex;
+  width: 100%;
+  padding: 8px;
+  gap: 16px;
+  text-decoration: none;
+  align-items: center;
+  letter-spacing: 1px;
+  border-top: 1px solid var(--borders);
+}
+
+.card-endpoint .methods {
+  width: 80px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.methods.get {
+  background: var(--get-background);
+  color: var(--get-text);
+}
+.methods.post {
+  background: var(--post-background);
+  color: var(--post-text);
+}
+.methods.put {
+  background: var(--put-background);
+  color: var(--put-text);
+}
+.methods.delete {
+  background: var(--delete-background);
+  color: var(--delete-text);
+}
+
+.card-endpoint .card-title {
+  color: var(--main-text);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.card-endpoint .card-subtitle {
+  font-size: 0.8rem;
+  color: var(--secondary-text);
+}
+
+.card-endpoint .intruction {
+  margin-left: auto;
+  color: var(--secondary-text);
+  text-align: center;
+}
+
+.card-endpoint .intruction.open {
+  color: var(--get-background);
+}

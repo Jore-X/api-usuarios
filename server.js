@@ -9,15 +9,10 @@ const app = express();
 
 // premite que o express leia json() para disponibilizar no req.body()
 app.use(express.json());
+app.use(express.static("public"));
 
 // usa a porta definida na env ou se não existir usa a 3000
 const PORT = process.env.PORT || 3000;
-
-// define o que acontece quando alguem acessa arota inicial "/" usando o metodo GET
-app.get("/", (req, res) => {
-  // envia uma mensagem como resposta da requisição
-  res.send("API de usuarios funcionando!");
-});
 
 // retorna a lista de usuarios inteira quando alguem acessa a rota /usuarios
 app.get("/usuarios", async (req, res) => {

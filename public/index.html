@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>API Usuários</title>
+  </head>
+  <body>
+    <main>
+      <div class="header-div">
+        <div class="text-logo">
+          <img src="./assets/svgs/database-svgrepo-com.svg" alt="" />
+          <span>Users API</span>
+        </div>
+        <div>
+          <h1 class="title">API de gerenciamento de usuários</h1>
+          <p class="technologies">Node.js • Express • Supabase • PostgreSQL</p>
+        </div>
+
+        <h2 class="subtitle">
+          Uma API REST com operações CRUD, validação de dados e integração com
+          banco de dados.
+        </h2>
+      </div>
+      <div class="time-alert">
+        <span><img src="./assets/svgs/clock-seven-svgrepo-com.svg" alt="" />Aviso
+          sobre o tempo de resposta</span
+        >
+        <p>
+          Esta API está hospedada em um plano gratuito. Após um período de
+          inatividade, a primeira requisição pode levar cerca de um minuto para
+          responder. As próximas requisições tendem a ser mais rápidas.
+        </p>
+      </div>
+      <div class="endpoints-box">
+        <h3 class="title">Explore endpoints</h3>
+        <a
+          href="https://api-usuarios-sihq.onrender.com/usuarios"
+          class="card-endpoint"
+        >
+          <div class="methods get">GET</div>
+          <div class="info">
+            <span class="card-title">/usuarios</span>
+            <p class="card-subtitle">Listar usuários</p>
+          </div>
+          <p class="intruction open">Clique para abrir</p>
+        </a>
+        <a
+          href="https://api-usuarios-sihq.onrender.com/usuarios/1"
+          class="card-endpoint"
+        >
+          <div class="methods get">GET</div>
+          <div class="info">
+            <span class="card-title">/usuarios/1</span>
+            <p class="card-subtitle">Buscar por id</p>
+          </div>
+          <p class="intruction open">Clique para abrir</p>
+        </a>
+        <a class="card-endpoint">
+          <div class="methods post">POST</div>
+          <div class="info">
+            <span class="card-title">/usuarios</span>
+            <p class="card-subtitle">Cadastrar usuário</p>
+          </div>
+          <p class="intruction">Sem permissão</p>
+        </a>
+        <a class="card-endpoint">
+          <div class="methods put">PUT</div>
+          <div class="info">
+            <span class="card-title">/usuarios/1</span>
+            <p class="card-subtitle">Atualizar usuário</p>
+          </div>
+          <p class="intruction">Sem permissão</p>
+        </a>
+        <a class="card-endpoint">
+          <div class="methods delete">DELETE</div>
+          <div class="info">
+            <span class="card-title">/usuarios/1</span>
+            <p class="card-subtitle">Excluir usuário</p>
+          </div>
+          <p class="intruction">Sem permissão</p>
+        </a>
+
+        <div class="footer-endpoints">
+          <img src="./assets/svgs/info-circle-svgrepo-com.svg" alt="" />
+          <div class="info">
+            <h3>Modo de demonstração</h3>
+            <p>
+              A consulta é pública. As operações de escrita estão bloqueadas na
+              versão hospedada. O código-fonte contém a implementação do CRUD.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
