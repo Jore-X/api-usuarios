@@ -164,6 +164,7 @@ app.delete("/usuarios/:id", async (req, res) => {
   // expressão regular que verifica se id é composto apenas por digitos
   // || = ou, se id é menor que 1
   if (!/^\d+$/.test(id) || Number(id) < 1) {
+    // 400 Bad Request
     return res.status(400).json({
       erro: "ID inválido",
     });
@@ -178,7 +179,7 @@ app.delete("/usuarios/:id", async (req, res) => {
 
   if (error) {
     console.error(error);
-    // 500 Bad Request
+    // 500 Internal Server Error
     return res.status(500).json({
       erro: "Erro ao excluir usuário",
     });
